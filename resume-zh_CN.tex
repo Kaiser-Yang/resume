@@ -17,8 +17,7 @@
 
 \basicInfo{
   \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \phone{(+86) 131-221-87xxx}}
  
 \section{\faGraduationCap\  教育背景}
 \datedsubsection{\textbf{电子科技大学}，四川成都}{2023 -- 至今}
@@ -27,6 +26,17 @@
 \textit{学士}\ 信息与软件工程
 
 \section{\faUsers\ 实习/项目经历}
+\datedsubsection{\textbf{腾讯控股有限公司} 四川成都}{2022年6月 -- 2022年8月}
+\role{企业微信 Mac客户端开发}{实习}
+\begin{onehalfspacing}
+实习期间主要完成了以下工作：
+\begin{itemize}
+  \item 修复客户端 Bugs。涉及 UI、性能、IM 等多个模块。总计达 30+。
+  \item 参与智能表相关的需求开发：智能表格同步审批、对外收款等功能。
+  \item 团队开发工具支持：完善依赖拉取脚本；支持团队项目在 vscode/nvim 的补全、构建、调试等功能。
+\end{itemize}
+\end{onehalfspacing}
+
 \datedsubsection{\textbf{华为技术有限公司} 四川成都}{2022年1月 -- 2022年6月}
 \role{软件开发工程师}{实习}
 \begin{onehalfspacing}
@@ -39,16 +49,26 @@
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{gcs}}{2024年7月 -- 至今}
-\role{Java，TypeScript}{团队项目}
+\datedsubsection{\textbf{LeMethod}}{2024年9月 -- 至今}
+\role{C++}{毕业设计}
 \begin{onehalfspacing}
-后端仓库：https://github.com/CMIPT/gcs-back-end。
+仓库：\url{https://github.com/Kaiser-Yang/ps-lite}。
 
-前端仓库：https://github.com/CMIPT/gcs-front-end。
+LeMethod 是一个分布式机器学习的聚合系统，旨在高效的对模型的参数进行聚合及分发。
+LeMethod 在 ps-lite 的基础上设计并实现模型参数的聚合、分发的调试策略。
+支持在星型拓扑的基础上进行任意条链路的扩展，同时引入洪泛控制使得在不进行任何扩展时也能比 ps-lite 的表现更加优异。
+\end{onehalfspacing}
+
+\datedsubsection{\textbf{gcs}}{2024年7月 -- 至今}
+\role{Java，TypeScript}{团队开源项目}
+\begin{onehalfspacing}
+后端仓库：\url{https://github.com/CMIPT/gcs-back-end}。
+
+前端仓库：\url{https://github.com/CMIPT/gcs-front-end}。
 
 该项目为自建的 Git 中心仓库，主要用于托管教研室的代码。
 项目由本人发起并主导，主要负责项目的设计以及开发。
-项目目前在使用中，目前支持以下功能：
+项目目前在使用中，支持以下功能：
 \begin{itemize}
   \item 用户注册、登录
   \item SSH 配置
@@ -58,69 +78,31 @@
 \end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{GTNDSystem}}{2024年10月 -- 2025年5月}
-\role{Python}{团队项目}
+\datedsubsection{\textbf{LightBoat（Neovim 发行版）}}{2025年6月 -- 至今}
+\role{Lua}{开源贡献/独立开发}
 \begin{onehalfspacing}
-项目原使用 Python2 和 Django 进行开发，主要用于网络拓扑的探测及可视化。
-本人负责项目的重构，使用 Python3 按照 PEP8 规范进行重构，同时定义相关开发相关规范。
+仓库：{https://www.github.com/Kaiser-Yang/LightBoat}。
+
+LightBoat 是一个开箱即用的 Neovim 发行版。
+支持现代 IDE 的常用功能：执行任务、补全、代码跳转、调试、Git 等。
+目前很多的 Neovim 发行版在打开、浏览、编辑大文件时会出现明显卡顿。
+而造成这一问题的主要原因是：很多插件的作者因为没有考虑大文件的场景在主线程中进行耗时的操作导致主线程出现卡死的情况。
+LightBoat 通过优化各个插件对于大文件的感知、优化耗时任务使得 Neovim 在拥有丰富插件的情况下仍然可以高效的对大文件进行操作（240MB的文件可以在 1 秒内打开，且编写流畅）。
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{blink-cmp-git}}{2025年1月 -- 至今}
-\role{Lua}{个人项目}
+\datedsubsection{\textbf{Neovim 插件开发}}{2025年1月 -- 至今}
+\role{Lua}{开源贡献/独立开发}
 \begin{onehalfspacing}
-项目仓库：https://github.com/Kaiser-Yang/blink-cmp-git。
-
-blink-cmp-git 是一个 Neovim 的插件，该插件提供 Git 中心仓库相关的补全
-（Issues、Pull Requests、Commits 以及 Mentions）。
+\begin{itemize}[leftmargin=*]
+  \item \textbf{blink-cmp-git}：提供 Git 中心仓库相关补全功能（支持 Issues、Pull Requests、Commits、Mentions 等场景），仓库：\url{https://github.com/Kaiser-Yang/blink-cmp-git}
+  \item \textbf{blink-cmp-dictionary}：实现单词补全功能，增强代码/文本编辑时的词汇联想能力，仓库：\url{https://github.com/Kaiser-Yang/blink-cmp-dictionary}
+  \item \textbf{blink-cmp-avante}：为 Avante 插件内置命令提供补全支持，优化插件交互效率，仓库：\url{https://github.com/Kaiser-Yang/blink-cmp-avante}
+  \item \textbf{win-resizer.nvim}：封装 Neovim 原生 resize 命令，提供易用 API 简化窗口尺寸调整操作，仓库：\url{https://github.com/Kaiser-Yang/win-resizer.nvim}
+  \item \textbf{non-ascii.nvim}：支持非 ASCII 字符（如中文、符号）的单词跳转、查找等功能，扩展编辑器对多语言字符的处理能力，仓库：\url{https://github.com/Kaiser-Yang/non-ascii.nvim}
+\end{itemize}
 \end{onehalfspacing}
 
-\datedsubsection{\textbf{blink-cmp-dictionary}}{2025年1月 -- 至今}
-\role{Lua}{个人项目}
-\begin{onehalfspacing}
-项目仓库：https://github.com/Kaiser-Yang/blink-cmp-dictionary。
-
-blink-cmp-dictionary 是一个 Neovim 的插件，该插件提供了单词补全。
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{blink-cmp-avante}}{2025年1月 -- 至今}
-\role{Lua}{个人项目}
-\begin{onehalfspacing}
-项目仓库：https://github.com/Kaiser-Yang/blink-cmp-avante。
-
-blink-cmp-avante 提供 Avante 插件中内置命令的补全。
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{win-resizer.nvim}}{2025年1月 -- 至今}
-\role{Lua}{个人项目}
-\begin{onehalfspacing}
-项目仓库：https://github.com/Kaiser-Yang/blink-cmp-win-resizer.nvim。
-
-win-resizer.nvim 对 Neovim 的 resize 命令进行了封装，提供了一些简单易用的 API。
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{t-SNE}}{2024年3月 -- 2024年8月}
-\role{C++，Python，Bash}{个人项目}
-\begin{onehalfspacing}
-项目仓库：https://github.com/Kaiser-Yang/t-SNE。
-
-使用 C++ 对 t-SNE 算法进行实现，使用 Python 对分类结果进行可视化。
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{matrix-calculation-accelerator}}{2024年3月 -- 2024年7月}
-\role{C++}{个人项目}
-\begin{onehalfspacing}
-项目仓库：https://github.com/Kaiser-Yang/matrix-calculation-accelerator。
-
-一个矩阵计算加速器，使用 C++ 多线程进行加速。
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{vni}}{2023年10月 -- 2024年4月}
-\role{C}{个人项目}
-\begin{onehalfspacing}
-项目仓库：https://github.com/Kaiser-Yang/vni。
-
-一个 Linux 的内核模块。可以统计到指定地址的 IP 包的数量。
-\end{onehalfspacing}
+除上述项目外，自己还对多个开源项目进行要贡献。
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -132,25 +114,20 @@ win-resizer.nvim 对 Neovim 的 resize 命令进行了封装，提供了一些�
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言：C/C++ > Java > Python == Bash > JS/TS > Dart
+  \item 编程语言：C/C++ > Java > Python == Bash == Lua
   \item 平台：Linux / Windows + WSL
-  \item 工具：Neovim / VSCode
+  \item 工具：Neovim
 \end{itemize}
 
 \section{\faHeartO\ 获奖情况}
 \datedline{\textit{二等奖}, 2025华为软件精英挑战赛西南赛区复赛}{2025年4月}
 \datedline{\textit{第一名}, 2025华为软件精英挑战赛西南赛区初赛}{2025年3月}
 \datedline{\textit{全球前5\%}，IEEEXtreme 18.0 Programming Competition}{2025年3月}
-\datedline{\textit{优秀研究生}，电子科技大学}{2024年11月}
-\datedline{\textit{二等奖}，电子科技大学2024-2025学年研究生学业奖学金}{2024年11月}
 \datedline{\textit{三等奖}, 第九届电子科技大学IEEEXtreme极限编程邀请赛}{2024年7月}
 \datedline{\textit{三等奖}，第十三届蓝桥杯全国软件和信息技术专业人才大赛全国总决赛}{2022年5月}
 \datedline{\textit{一等奖}，第十三届蓝桥杯全国软件和信息技术专业人才大赛四川赛区}{2022年5月}
 \datedline{\textit{华储星}，华为技术有限公司存储部门}{2022年4月}
 \datedline{\textit{最佳代码奖}，华为技术有限公司存储部门}{2022年4月}
-\datedline{\textit{标兵奖学金}，电子科技大学2021-2022年度}{2022年11月}
-\datedline{\textit{标兵奖学金}，电子科技大学2020-2021年度}{2021年11月}
-\datedline{\textit{标兵奖学金}，电子科技大学2019-2020年度}{2020年11月}
 \datedline{\textit{一等奖}，NOIP2018提高组四川赛区}{2018年12月}
 
 \section{\faInfo\ 其他}
